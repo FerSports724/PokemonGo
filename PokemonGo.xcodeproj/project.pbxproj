@@ -13,6 +13,7 @@
 		168499761F352C19005C88DA /* PokemonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168499741F352C19005C88DA /* PokemonGo.xcdatamodeld */; };
 		168499781F352C19005C88DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168499771F352C19005C88DA /* Assets.xcassets */; };
 		1684997B1F352C19005C88DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168499791F352C19005C88DA /* LaunchScreen.storyboard */; };
+		168499841F352E3C005C88DA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168499831F352E3C005C88DA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		168499771F352C19005C88DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1684997A1F352C19005C88DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1684997C1F352C19005C88DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168499831F352E3C005C88DA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168499841F352E3C005C88DA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				1684996C1F352C18005C88DA /* PokemonGo */,
 				1684996B1F352C18005C88DA /* Products */,
+				168499821F352E3C005C88DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				168499741F352C19005C88DA /* PokemonGo.xcdatamodeld */,
 			);
 			path = PokemonGo;
+			sourceTree = "<group>";
+		};
+		168499821F352E3C005C88DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				168499831F352E3C005C88DA /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +113,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 738YZJQJ3T;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
